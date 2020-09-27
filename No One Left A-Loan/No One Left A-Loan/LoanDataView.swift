@@ -41,7 +41,7 @@ struct LoanDataView: View {
     }
     
     func decodeJson(accountId: String) {
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
         var request = URLRequest(url: URL(string: "http://api.reimaginebanking.com/accounts/\(accountId)/loans?key=d5e35f4bb7306734cc3bd0f9f704ebc1")!,timeoutInterval: Double.infinity)
         request.addValue("application/json", forHTTPHeaderField: "Accept")
 

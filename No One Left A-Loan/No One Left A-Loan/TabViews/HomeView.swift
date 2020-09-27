@@ -41,7 +41,7 @@ struct HomeView: View {
                                         .font(.headline)
                                         .foregroundColor(.white)
                                         .padding(8)
-                                        .background(Color.blue)
+                                        .background(Color("Celadon"))
                                         .cornerRadius(50)
                                 }
                                 Spacer()

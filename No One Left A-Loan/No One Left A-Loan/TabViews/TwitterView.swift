@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import SDWebImageSwiftUI
 
 struct TwitterView: View {
     @ObservedObject var tweets: TweetModel = generateTweet(tweets: TweetModel())
@@ -19,13 +20,28 @@ struct TwitterView: View {
                 .overlay(Text("#HealthyConversations").bold().padding(.bottom,30))
             List(tweets.tweets) { tweet in
                 VStack(alignment: .leading) {
-                    Text(tweet.userName)
-                        .font(.body)
-                    Spacer()
+                    HStack(alignment: .center) {
+                        WebImage(url: URL(string:tweet.imageURL))
+                            .resizable()
+                            .placeholder {
+                                Image(systemName: "photo")
+                             }
+                            .indicator(.activity)
+                            .transition(.fade(duration: 0.5))
+                            .scaledToFit()
+                            .frame(width: CGFloat(50), height: CGFloat(50), alignment: .center)
+                            .cornerRadius(50)
+                        VStack(alignment: .leading) {
+                            Text("\(tweet.displayName)")
+                                .font(.headline)
+                            Text("@\(tweet.userName)")
+                                .font(.subheadline)
+                                .foregroundColor(Color("Celadon"))
+                        }
+                    }
                     Text(tweet.summary)
                         .font(.subheadline)
-                        .foregroundColor(.gray)
-                    Spacer()
+                        .foregroundColor(.black)
                 }
             }
         }
@@ -50,7 +66,7 @@ func generateTweet(tweets:TweetModel) -> TweetModel{
     { (tweetObj, streamObj) in
         print("Got a new tweet! Updating View!")
         print(tweetObj)
-        tweets.add(userName: tweetObj.uname, imageURL: tweetObj.profileImgURL, summary: tweetObj.text)
+        tweets.add(userName: tweetObj.uname, displayName:tweetObj.name, imageURL: tweetObj.profileImgURL, summary: tweetObj.text)
         
         numCalls += 1;
         print("Called: \(numCalls) times")

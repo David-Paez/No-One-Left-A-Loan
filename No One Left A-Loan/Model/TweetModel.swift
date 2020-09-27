@@ -11,6 +11,7 @@ import Combine
 struct Twit: Identifiable {
     var id:Int
     var userName:String
+    var displayName:String
     var imageURL:String
     var summary:String
 }
@@ -29,8 +30,8 @@ class TweetModel: ObservableObject {
         tweets = []
     }
     
-    func add(userName: String, imageURL:String, summary:String){
-        let tweet = Twit(id: newId(), userName: userName, imageURL: imageURL, summary: summary)
+    func add(userName: String, displayName: String, imageURL:String, summary:String){
+        let tweet = Twit(id: newId(), userName: userName, displayName: displayName, imageURL: imageURL, summary: summary)
         tweets += [tweet]
     }
 }

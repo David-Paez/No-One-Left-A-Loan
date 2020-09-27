@@ -150,7 +150,6 @@
 		7D77046B251F93000035F697 /* No One Left A-Loan */ = {
 			isa = PBXGroup;
 			children = (
-				7DB711A62520C42500ED0CD1 /* CustomerData.swift */,
 				7DEC18202520A37200B2156B /* TwitterAPI */,
 				7DEC180425208FF000B2156B /* TabViews */,
 				7DF0F3CA25208ADC004F8235 /* Model */,
@@ -161,6 +160,7 @@
 				7D77047A251F93030035F697 /* Info.plist */,
 				7D770477251F93030035F697 /* No_One_Left_A_Loan.xcdatamodeld */,
 				7D770472251F93030035F697 /* Preview Content */,
+				7DB711A62520C42500ED0CD1 /* CustomerData.swift */,
 				DC45107F2520356E007075C0 /* LoanData.swift */,
 				DC943517252075990036F471 /* LoanDataView.swift */,
 				7D3DDC4E25208D49007B26D2 /* NeutralView.swift */,
