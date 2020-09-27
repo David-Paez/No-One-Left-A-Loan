@@ -74,12 +74,10 @@ struct BioView: View {
     @ObservedObject var studentModel: StudentModel
     var body: some View {
         HStack {
-            VStack(alignment: .leading) {
-                Text("Bio")
-                Text(studentModel.biography)
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-            }
+            Text("Bio")
+            Text(studentModel.biography)
+                .font(.subheadline)
+                .foregroundColor(.gray)
         }
     }
 }
