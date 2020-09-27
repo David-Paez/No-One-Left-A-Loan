@@ -162,6 +162,5 @@ struct StudentFormView: View {
                 .listRowBackground(Color("Olivine"))            }
             Spacer()
         }
-        .navigationBarBackButtonHidden(true)
     }
 }

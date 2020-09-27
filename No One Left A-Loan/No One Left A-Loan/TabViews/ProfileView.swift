@@ -103,8 +103,7 @@ struct SchoolView: View {
     var body: some View {
         HStack {
             Text("School")
-            Text(studentModel.school
-            )
+            Text(studentModel.school)
                 .foregroundColor(.gray)
         }
     }

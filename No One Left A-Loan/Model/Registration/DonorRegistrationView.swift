@@ -61,6 +61,5 @@ struct DonorFormView: View {
             }
             Spacer()
         }
-        .navigationBarBackButtonHidden(true)
     }
 }
