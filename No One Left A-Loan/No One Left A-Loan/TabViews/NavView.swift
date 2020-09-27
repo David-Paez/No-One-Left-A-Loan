@@ -9,6 +9,7 @@ import SwiftUI
 import CoreData
 
 struct NavView: View {
+    @ObservedObject var studentModel:StudentModel
     var body: some View {
         TabView {
             HomeView()
@@ -21,7 +22,7 @@ struct NavView: View {
                     Image(systemName: "bubble.left.fill")
                     Text("#HealthyConversations")
                 }
-            ProfileView()
+            ProfileView(studentModel: studentModel)
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                     Text("Profile")
@@ -33,6 +34,6 @@ struct NavView: View {
 
 struct NavView_Previews: PreviewProvider {
     static var previews: some View {
-        NavView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        NavView(studentModel: StudentModel()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

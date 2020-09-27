@@ -79,7 +79,7 @@ struct LoginButtons: View {
     @ObservedObject var donorModel: DonorModel
     var body: some View {
         VStack {
-            NavigationLink(destination: NavView()) {
+            NavigationLink(destination: NavView(studentModel: studentModel)) {
                 Text("Login")
                     .foregroundColor(.white)
                     .frame(width:250, height:45)

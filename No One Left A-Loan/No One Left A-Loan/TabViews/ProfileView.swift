@@ -9,6 +9,7 @@ import SwiftUI
 import CoreData
 
 struct ProfileView: View {
+    @ObservedObject var studentModel:StudentModel
     var body: some View {
         VStack {
             Color("barGray")
@@ -31,11 +32,11 @@ struct ProfileView: View {
                         .cornerRadius(10)
                 }
                 VStack(alignment: .leading, spacing: 20) {
-                    NameView()
-                    BioView()
-                    AddressView()
-                    SchoolView()
-                    GradView()
+                    NameView(studentModel: studentModel)
+                    BioView(studentModel: studentModel)
+                    AddressView(studentModel: studentModel)
+                    SchoolView(studentModel: studentModel)
+                    GradView(studentModel: studentModel)
                     Spacer()
                 }
                 .padding(.horizontal, 10)
@@ -46,26 +47,28 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ProfileView(studentModel: StudentModel()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
 
 struct NameView: View {
+    @ObservedObject var studentModel: StudentModel
     var body: some View {
         HStack {
             Text("Name")
-            Text("Disguised Toast")
+            Text(studentModel.firstName + " " + studentModel.lastName)
                 .foregroundColor(.gray)
         }
     }
 }
 
 struct BioView: View {
+    @ObservedObject var studentModel: StudentModel
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Bio")
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                Text(studentModel.biography)
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }
@@ -74,30 +77,34 @@ struct BioView: View {
 }
 
 struct AddressView: View {
+    @ObservedObject var studentModel: StudentModel
     var body: some View {
         HStack {
             Text("City, State")
-            Text("Los Angeles, CA")
+            Text(studentModel.address)
                 .foregroundColor(.gray)
         }
     }
 }
 
 struct GradView: View {
+    @ObservedObject var studentModel: StudentModel
     var body: some View {
         HStack {
             Text("Graduation Year")
-            Text("2021")
+            Text(studentModel.gradYear)
                 .foregroundColor(.gray)
         }
     }
 }
 
 struct SchoolView: View {
+    @ObservedObject var studentModel: StudentModel
     var body: some View {
         HStack {
             Text("School")
-            Text("Florida International University")
+            Text(studentModel.school
+            )
                 .foregroundColor(.gray)
         }
     }
