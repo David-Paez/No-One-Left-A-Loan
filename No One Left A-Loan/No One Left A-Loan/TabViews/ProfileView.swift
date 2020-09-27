@@ -10,31 +10,34 @@ import CoreData
 
 struct ProfileView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 30) {
-            Image(systemName: "photo")
-                .resizable()
-                .padding(20)
-            VStack(alignment: .center, spacing: 10) {
-                ProgressView(value: 0.25)
-                    .padding(20)
-                    .accentColor(.blue)
-                Text("$2,500 / $10,000")
-                    .font(.title2)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 20)
-                    .background(Color.blue)
-                    .cornerRadius(10)
+        NavigationView {
+            VStack(alignment: .center, spacing: 25) {
+                Image(systemName: "photo")
+                    .resizable()
+                    .padding([.top, .leading, .trailing], 20)
+                VStack(alignment: .center, spacing: 10) {
+                    ProgressView(value: 0.25)
+                        .padding(.horizontal, 20)
+                        .accentColor(.blue)
+                    Text("$2,500 / $10,000")
+                        .font(.title2)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 20)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
+                VStack(alignment: .leading, spacing: 20) {
+                    NameView()
+                    BioView()
+                    AddressView()
+                    SchoolView()
+                    GradView()
+                    Spacer()
+                }
+                .padding(.horizontal, 10)
             }
-            VStack(alignment: .leading, spacing: 30) {
-                NameView()
-                BioView()
-                SchoolView()
-                GradView()
-                Spacer()
-            }
-            .padding(.horizontal, 10)
+            .navigationBarTitle("Profile", displayMode: .inline)
         }
-        .navigationBarTitle("Profile")
     }
 }
 
@@ -63,6 +66,16 @@ struct BioView: View {
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }
+        }
+    }
+}
+
+struct AddressView: View {
+    var body: some View {
+        HStack {
+            Text("City, State")
+            Text("Los Angeles, CA")
+                .foregroundColor(.gray)
         }
     }
 }

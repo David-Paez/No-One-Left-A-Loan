@@ -10,39 +10,35 @@ import CoreData
 
 struct HomeView: View {
     var body: some View {
-        List(0..<10) { loan in
-            Image(systemName: "photo")
-            VStack(alignment: .leading) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("First Name")
+        NavigationView {
+            List(0..<10) { loan in
+                Image(systemName: "photo")
+                VStack(alignment: .leading) {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("First Name")
+                                .font(.headline)
+                            Text("School")
+                                .font(.subheadline)
+                        }
+                        Spacer()
+                        Button("DONATE", action: donateFunds)
                             .font(.headline)
-                        Text("School")
-                            .font(.subheadline)
+                            .foregroundColor(.white)
+                            .padding(8)
+                            .background(Color.blue)
+                            .cornerRadius(50)
                     }
                     Spacer()
-                    Button("DONATE", action: donateFunds)
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding(8)
-                        .background(Color.blue)
-                        .cornerRadius(50)
+                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                        .italic()
+                        .lineLimit(2)
+                    Spacer()
                 }
-//                HStack {
-//                    Text("School")
-//                        .font(.body)
-//                    Spacer()
-//                    Text("$10,000")
-//                        .font(.body)
-//                }
-                Spacer()
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-                    .italic()
-                    .lineLimit(2)
-                Spacer()
             }
+            .navigationBarTitle("Home", displayMode: .inline)
         }
     }
 }

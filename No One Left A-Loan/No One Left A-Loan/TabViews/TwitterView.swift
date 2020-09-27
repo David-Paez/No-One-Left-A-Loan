@@ -10,18 +10,20 @@ import CoreData
 
 struct TwitterView: View {
     var body: some View {
-        List(0..<10) { tweet in
-            Image(systemName: "photo")
-            VStack(alignment: .leading) {
-                Text("Name @username")
-                    .font(.body)
-                Spacer()
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-//                    .lineLimit(3)
-                Spacer()
+        NavigationView {
+            List(0..<10) { tweet in
+                Image(systemName: "photo")
+                VStack(alignment: .leading) {
+                    Text("Name @username")
+                        .font(.body)
+                    Spacer()
+                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                    Spacer()
+                }
             }
+            .navigationBarTitle("#HealthyConversations", displayMode: .inline)
         }
     }
 }
