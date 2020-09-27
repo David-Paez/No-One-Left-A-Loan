@@ -9,14 +9,16 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    @ObservedObject var studentModel: StudentModel
+    @ObservedObject var donorModel: DonorModel
 
     var body: some View {
-        Text("Hello World")
+        LoginScreen(studentModel: studentModel, donorModel: donorModel)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView(studentModel:StudentModel(), donorModel:DonorModel()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
