@@ -8,17 +8,30 @@
 import SwiftUI
 
 struct StudentRegistrationView: View {
-    @State var bioField: String
+    @ObservedObject var studentModel: StudentModel
+    
     var body: some View {
-        VStack {
-            StudentFormView(bioField: $bioField)
-            NavigationLink(destination: AccountRegistrationView())
-            {
-                Text("Continue")
-                    .foregroundColor(.white)
-                    .frame(width:150, height:40)
-                    .background(Color("Carmine"))
-                    .cornerRadius(20)
+        ZStack {
+            Rectangle()
+//                .foregroundColor(Color("Olivine"))
+//                .frame(height:920)
+            Color("Olivine")
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("Student Registration Form")
+                    .font(.title)
+                    .bold()
+//                    .padding(.top,100)
+                StudentFormView(studentModel: studentModel)
+                NavigationLink(destination: AccountRegistrationView(studentModel: studentModel))
+                {
+                    Text("Continue")
+                        .foregroundColor(.white)
+                        .frame(width:150, height:40)
+                        .background(Color("Carmine"))
+                        .cornerRadius(20)
+                        .padding(.bottom, 10)
+                }
             }
         }
     }
@@ -26,12 +39,13 @@ struct StudentRegistrationView: View {
 
 struct StudentRegistrationView_Previews: PreviewProvider {
     static var previews: some View {
-        StudentRegistrationView(bioField: "Enter bio")
+        StudentRegistrationView(studentModel: StudentModel())
     }
 }
 
 struct FieldInput: View {
     var fieldName: String
+    @Binding var input: String
     var body: some View {
         VStack {
             HStack {
@@ -40,7 +54,32 @@ struct FieldInput: View {
                     .font(.title3)
                 Spacer()
             }
-            TextField("", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+            TextField("", text: $input)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .background(Color(.white))
+                .padding(.leading,30)
+                .padding(.trailing,30)
+                .shadow(color: Color.black.opacity(0.1), radius: 5, y:-2)
+                .padding(.bottom, 30)
+                .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+        }
+    }
+}
+
+
+struct EmailFieldInput: View {
+    var fieldName: String
+    @Binding var input: String
+    var body: some View {
+        VStack {
+            HStack {
+                Text(fieldName)
+                    .padding(.leading, 30)
+                    .font(.title3)
+                Spacer()
+            }
+            TextField("", text: $input)
+                .keyboardType(.emailAddress)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .background(Color(.white))
                 .padding(.leading,30)
@@ -76,7 +115,7 @@ struct PasswordFieldInput: View {
 
 
 struct BioField: View {
-    @Binding var bioField: String
+    @Binding var input: String
     var body: some View {
         VStack {
             HStack {
@@ -90,14 +129,14 @@ struct BioField: View {
             }
             ZStack
             {
-                TextEditor(text: $bioField)
+                TextEditor(text: $input)
                     .background(Color(.white))
                     .padding(.leading,30)
                     .padding(.trailing,30)
                     .padding(.bottom, 30)
                     .shadow(color: Color.black.opacity(0.1), radius: 5, y:-2)
                     .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
-                        bioField = ""
+                        input = ""
                     })
             }
         }
@@ -105,24 +144,22 @@ struct BioField: View {
 }
 
 struct StudentFormView: View {
-    @Binding var bioField: String
+    @ObservedObject var studentModel: StudentModel
     var body: some View {
         VStack {
             Spacer()
             List {
                 VStack {
-                    FieldInput(fieldName: "First Name")
-                    FieldInput(fieldName: "Last Name")
-                    FieldInput(fieldName: "Address")
-                    FieldInput(fieldName: "City")
-                    FieldInput(fieldName: "State")
-                    FieldInput(fieldName: "Zip Code")
-                    FieldInput(fieldName: "School")
-                    FieldInput(fieldName: "Graduation Year")
-                    BioField(bioField: $bioField)
+                    FieldInput(fieldName: "First Name", input: $studentModel.firstName)
+                    FieldInput(fieldName: "Last Name", input: $studentModel.lastName)
+                    FieldInput(fieldName: "Birth Date", input: $studentModel.birthDate)
+                    EmailFieldInput(fieldName: "Email", input: $studentModel.emailAddress)
+                    FieldInput(fieldName: "Address (Street, City, State, Zip)", input: $studentModel.emailAddress)
+                    FieldInput(fieldName: "School", input: $studentModel.school)
+                    FieldInput(fieldName: "Graduation Year", input: $studentModel.gradYear)
+                    BioField(input: $studentModel.biography)
                 }
-                .background(Color("Olivine"))
-            }
+                .listRowBackground(Color("Olivine"))            }
             Spacer()
         }
         .navigationBarBackButtonHidden(true)

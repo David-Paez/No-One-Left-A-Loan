@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct SignUpChoice: View {
+    @ObservedObject var studentModel: StudentModel
+    @ObservedObject var donorModel: DonorModel
     var body: some View {
         ZStack {
             Rectangle()
                 .foregroundColor(Color("Olivine"))
-                .frame(height:1000)
-            ChoiceView()
+                .frame(height:950)
+//            Color("Olivine")
+//                .edgesIgnoringSafeArea(.all)
+            ChoiceView(studentModel: studentModel, donorModel: donorModel)
         }
         .navigationBarBackButtonHidden(true)
     }
@@ -21,32 +25,37 @@ struct SignUpChoice: View {
 
 struct SignUpChoice_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpChoice()
+        SignUpChoice(studentModel: StudentModel(), donorModel: DonorModel())
     }
 }
 
 struct ChoiceView: View {
+    @ObservedObject var studentModel: StudentModel
+    @ObservedObject var donorModel: DonorModel
     var body: some View {
         VStack {
             Text("Are you a...")
                 .font(.title)
                 .padding(.bottom)
-                .padding(.top,280)
+                .padding(.top,250)
             
-            Text("Donor?")
-                .font(.title)
-                .foregroundColor(.white)
-                .frame(width:300, height:60)
-                .background(Color("Celadon"))
-                .cornerRadius(20)
-                .padding(.bottom)
+            NavigationLink(destination: DonorRegistrationView(donorModel:donorModel)) {
+                Text("Donor?")
+                    .font(.title)
+                    .bold()
+                    .foregroundColor(.white)
+                    .frame(width:300, height:60)
+                    .background(Color("Celadon"))
+                    .cornerRadius(20)
+                    .padding(.bottom)
+            }
             
             Text("Or")
                 .font(.title)
-            
-            NavigationLink(destination: StudentRegistrationView(bioField: "Enter bio")) {
+            NavigationLink(destination: StudentRegistrationView(studentModel: studentModel)) {
                 Text("Student?")
                     .font(.title)
+                    .bold()
                     .foregroundColor(.white)
                     .frame(width:300, height:60)
                     .background(Color("Carmine"))

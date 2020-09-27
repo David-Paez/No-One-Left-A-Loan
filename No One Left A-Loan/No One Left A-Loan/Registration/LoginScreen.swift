@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct LoginScreen: View {
+    @ObservedObject var studentModel: StudentModel
+    @ObservedObject var donorModel: DonorModel
     var body: some View {
         NavigationView {
             ZStack {
                 Rectangle()
                     .foregroundColor(Color("Olivine"))
                     .frame(height:950)
-                LoginView()
+//                Color("Olivine")
+//                    .edgesIgnoringSafeArea(.all)
+                LoginView(studentModel: studentModel, donorModel: donorModel)
             }
         }
     }
@@ -22,11 +26,13 @@ struct LoginScreen: View {
 
 struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScreen()
+        LoginScreen(studentModel: StudentModel(), donorModel: DonorModel())
     }
 }
 
 struct LoginView: View {
+    @ObservedObject var studentModel: StudentModel
+    @ObservedObject var donorModel: DonorModel
     var body: some View {
         VStack {
             Text("Logo Spaceholder")
@@ -60,13 +66,15 @@ struct LoginView: View {
                     .shadow(color: Color.black.opacity(0.1), radius: 5, y:-2)
             }
             .padding(.bottom, 30)
-            LoginButtons()
+            LoginButtons(studentModel: studentModel, donorModel: donorModel)
             Spacer()
         }
     }
 }
 
 struct LoginButtons: View {
+    @ObservedObject var studentModel: StudentModel
+    @ObservedObject var donorModel: DonorModel
     var body: some View {
         VStack {
             Text("Login")
@@ -75,7 +83,7 @@ struct LoginButtons: View {
                 .background(Color("Celadon"))
                 .cornerRadius(20)
                 .padding(.bottom)
-            NavigationLink(destination: SignUpChoice())
+            NavigationLink(destination: SignUpChoice(studentModel: studentModel,donorModel: donorModel))
             {
                 Text("Sign Up")
                     .foregroundColor(.white)
