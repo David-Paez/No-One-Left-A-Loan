@@ -35,9 +35,11 @@ struct LoginView: View {
     @ObservedObject var donorModel: DonorModel
     var body: some View {
         VStack {
-            Text("Logo Spaceholder")
-                .padding(.top, 250)
-                .padding(.bottom, 35)
+            Image("logoforNotALoan")
+                .resizable()
+                .scaledToFit()
+                .padding(.top,150)
+                .padding(.bottom,30)
             VStack {
                 HStack {
                     Text("Username")
@@ -77,7 +79,7 @@ struct LoginButtons: View {
     @ObservedObject var donorModel: DonorModel
     var body: some View {
         VStack {
-            NavigationLink(destination: HomeView()) {
+            NavigationLink(destination: NavView()) {
                 Text("Login")
                     .foregroundColor(.white)
                     .frame(width:250, height:45)
