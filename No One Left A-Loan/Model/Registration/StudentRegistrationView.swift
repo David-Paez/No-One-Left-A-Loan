@@ -154,7 +154,7 @@ struct StudentFormView: View {
                     FieldInput(fieldName: "Last Name", input: $studentModel.lastName)
                     FieldInput(fieldName: "Birth Date", input: $studentModel.birthDate)
                     EmailFieldInput(fieldName: "Email", input: $studentModel.emailAddress)
-                    FieldInput(fieldName: "Address (Street, City, State, Zip)", input: $studentModel.emailAddress)
+                    FieldInput(fieldName: "Address (Street, City, State, Zip)", input: $studentModel.address)
                     FieldInput(fieldName: "School", input: $studentModel.school)
                     FieldInput(fieldName: "Graduation Year", input: $studentModel.gradYear)
                     BioField(input: $studentModel.biography)

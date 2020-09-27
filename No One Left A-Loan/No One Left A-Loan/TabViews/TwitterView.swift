@@ -9,6 +9,7 @@ import SwiftUI
 import CoreData
 
 struct TwitterView: View {
+//    let myTwitterAPI = TwitterAPI()
     var body: some View {
         VStack {
             Color("barGray")

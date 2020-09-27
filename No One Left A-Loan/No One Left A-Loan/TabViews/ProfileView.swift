@@ -17,9 +17,12 @@ struct ProfileView: View {
                 .frame(height:1)
                 .overlay(Text("Profile").bold().padding(.bottom,30))
             VStack(alignment: .center, spacing: 25) {
-                Image(systemName: "photo")
+                Image("profileIcon")
                     .resizable()
-                    .padding([.top, .leading, .trailing], 20)
+                    .scaledToFit()
+                    .frame(height:200)
+                Button("Change Profile Picture") {
+                }
                 VStack(alignment: .center, spacing: 10) {
                     ProgressView(value: 0.25)
                         .padding(.horizontal, 20)
