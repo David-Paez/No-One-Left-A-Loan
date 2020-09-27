@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D3DDC4F25208D49007B26D2 /* NeutralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DDC4E25208D49007B26D2 /* NeutralView.swift */; };
 		7D77046D251F93000035F697 /* No_One_Left_A_LoanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77046C251F93000035F697 /* No_One_Left_A_LoanApp.swift */; };
 		7D77046F251F93000035F697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77046E251F93000035F697 /* ContentView.swift */; };
 		7D770471251F93030035F697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D770470251F93030035F697 /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		7D770479251F93030035F697 /* No_One_Left_A_Loan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D770477251F93030035F697 /* No_One_Left_A_Loan.xcdatamodeld */; };
 		7D770484251F93040035F697 /* No_One_Left_A_LoanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D770483251F93040035F697 /* No_One_Left_A_LoanTests.swift */; };
 		7D77048F251F93040035F697 /* No_One_Left_A_LoanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77048E251F93040035F697 /* No_One_Left_A_LoanUITests.swift */; };
-		7DC152D6252066BC003E6574 /* NeutralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC152D5252066BC003E6574 /* NeutralView.swift */; };
 		7DF0F3DD25208B7D004F8235 /* DonorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF0F3DB25208B7D004F8235 /* DonorModel.swift */; };
 		7DF0F3DE25208B7D004F8235 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF0F3DC25208B7D004F8235 /* StudentModel.swift */; };
 		7DF0F3EA25208B96004F8235 /* StudentRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF0F3E525208B96004F8235 /* StudentRegistrationView.swift */; };
@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D3DDC4E25208D49007B26D2 /* NeutralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralView.swift; sourceTree = "<group>"; };
 		7D770469251F93000035F697 /* No One Left A-Loan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No One Left A-Loan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D77046C251F93000035F697 /* No_One_Left_A_LoanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = No_One_Left_A_LoanApp.swift; sourceTree = "<group>"; };
 		7D77046E251F93000035F697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		7D77048A251F93040035F697 /* No One Left A-LoanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No One Left A-LoanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D77048E251F93040035F697 /* No_One_Left_A_LoanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = No_One_Left_A_LoanUITests.swift; sourceTree = "<group>"; };
 		7D770490251F93040035F697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DC152D5252066BC003E6574 /* NeutralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralView.swift; sourceTree = "<group>"; };
 		7DF0F3DB25208B7D004F8235 /* DonorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorModel.swift; sourceTree = "<group>"; };
 		7DF0F3DC25208B7D004F8235 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 		7DF0F3E525208B96004F8235 /* StudentRegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentRegistrationView.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				7D770472251F93030035F697 /* Preview Content */,
 				DC45107F2520356E007075C0 /* LoanData.swift */,
 				DC943517252075990036F471 /* LoanDataView.swift */,
-				7DC152D5252066BC003E6574 /* NeutralView.swift */,
+				7D3DDC4E25208D49007B26D2 /* NeutralView.swift */,
 			);
 			path = "No One Left A-Loan";
 			sourceTree = "<group>";
@@ -314,6 +314,7 @@
 			files = (
 				7DF0F3ED25208B96004F8235 /* DonorRegistrationView.swift in Sources */,
 				7D770479251F93030035F697 /* No_One_Left_A_Loan.xcdatamodeld in Sources */,
+				7D3DDC4F25208D49007B26D2 /* NeutralView.swift in Sources */,
 				7D770476251F93030035F697 /* Persistence.swift in Sources */,
 				DC943518252075990036F471 /* LoanDataView.swift in Sources */,
 				7DF0F3EB25208B96004F8235 /* AccountRegistrationView.swift in Sources */,
@@ -324,7 +325,6 @@
 				7D77046D251F93000035F697 /* No_One_Left_A_LoanApp.swift in Sources */,
 				7DF0F3EC25208B96004F8235 /* SignUpChoice.swift in Sources */,
 				DC4510802520356E007075C0 /* LoanData.swift in Sources */,
-				7DC152D6252066BC003E6574 /* NeutralView.swift in Sources */,
 				7D77046F251F93000035F697 /* ContentView.swift in Sources */,
 				7DF0F3DD25208B7D004F8235 /* DonorModel.swift in Sources */,
 				7D77046D251F93000035F697 /* No_One_Left_A_LoanApp.swift in Sources */,
