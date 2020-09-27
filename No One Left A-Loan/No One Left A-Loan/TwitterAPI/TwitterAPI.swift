@@ -36,7 +36,7 @@ class Tweet: CustomStringConvertible{
 class TwitterAPI{
     
     private var hashtag = "debtfree";
-    private let bearer_token = "";
+    private let bearer_token = "Bearer AAAAAAAAAAAAAAAAAAAAAG1IIAEAAAAAyF%2FFpd74zmBIWi1kDX7IbJYDVKk%3DjNhsiGCzd1ztPkY2K3mHVCMwMGsJVqfICxVk7GjTQ652lCGk8Z";
     
     // URLs for GET and POST calls
     private let rulesURL = "https://api.twitter.com/2/tweets/search/stream/rules";
