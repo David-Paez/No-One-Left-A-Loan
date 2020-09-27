@@ -9,9 +9,15 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            VStack {
+                Text("Hello World")
+                NavigationLink(destination: NavView()) {
+                    Text("Go to TabViews")
+                }
+            }
+        }
     }
 }
 
