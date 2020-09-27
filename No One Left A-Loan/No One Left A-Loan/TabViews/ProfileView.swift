@@ -35,6 +35,11 @@ struct ProfileView: View {
                         .cornerRadius(10)
                 }
                 VStack(alignment: .leading, spacing: 20) {
+                    HStack {
+                        Text("Username")
+                        Text(studentModel.userName)
+                            .foregroundColor(.gray)
+                    }
                     NameView(studentModel: studentModel)
                     BioView(studentModel: studentModel)
                     AddressView(studentModel: studentModel)

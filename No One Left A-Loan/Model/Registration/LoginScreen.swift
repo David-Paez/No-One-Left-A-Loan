@@ -47,7 +47,7 @@ struct LoginView: View {
                         .font(.title3)
                     Spacer()
                 }
-                TextField("", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                TextField("", text: $studentModel.userName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .background(Color(.white))
                     .padding(.leading,30)
