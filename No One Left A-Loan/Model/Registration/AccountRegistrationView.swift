@@ -26,7 +26,7 @@ struct AccountRegistrationView: View {
                 FieldInput(fieldName: "Username", input: $studentModel.userName)
                 PasswordFieldInput(fieldName: "Create Password")
                 PasswordFieldInput(fieldName: "Confirm Password")
-                NavigationLink(destination: NeutralView())
+                NavigationLink(destination: NavView())
                 {
                     Text("Post Ma-Loan!")
                         .foregroundColor(.white)

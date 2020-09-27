@@ -77,12 +77,14 @@ struct LoginButtons: View {
     @ObservedObject var donorModel: DonorModel
     var body: some View {
         VStack {
-            Text("Login")
-                .foregroundColor(.white)
-                .frame(width:250, height:45)
-                .background(Color("Celadon"))
-                .cornerRadius(20)
-                .padding(.bottom)
+            NavigationLink(destination: HomeView()) {
+                Text("Login")
+                    .foregroundColor(.white)
+                    .frame(width:250, height:45)
+                    .background(Color("Celadon"))
+                    .cornerRadius(20)
+                    .padding(.bottom)
+            }
             NavigationLink(destination: SignUpChoice(studentModel: studentModel,donorModel: donorModel))
             {
                 Text("Sign Up")
