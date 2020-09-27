@@ -12,6 +12,12 @@
 		7D1C49562520259300C57B84 /* AccountRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C49552520259300C57B84 /* AccountRegistrationView.swift */; };
 		7D1C495F252036AC00C57B84 /* DonorRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C495E252036AC00C57B84 /* DonorRegistrationView.swift */; };
 		7D75CBA9251FE16600232204 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75CBA8251FE16600232204 /* LoginScreen.swift */; };
+		118A493E130EE8C68BBEF4F4 /* Pods_No_One_Left_A_Loan_No_One_Left_A_LoanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D7712339C8FA4FCE939E0 /* Pods_No_One_Left_A_Loan_No_One_Left_A_LoanUITests.framework */; };
+		2ED81833251FE21500714E8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED81832251FE21400714E8B /* HomeView.swift */; };
+		2ED8183B251FE6F300714E8B /* TwitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8183A251FE6F300714E8B /* TwitterView.swift */; };
+		2ED81843251FE86500714E8B /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED81842251FE86500714E8B /* NavView.swift */; };
+		2ED8184B251FE8E200714E8B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8184A251FE8E200714E8B /* ProfileView.swift */; };
+		39CC7F417DD18B91AAAF9CF9 /* Pods_No_One_Left_A_Loan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B8DC92C3EF2C137762C5EC /* Pods_No_One_Left_A_Loan.framework */; };
 		7D77046D251F93000035F697 /* No_One_Left_A_LoanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77046C251F93000035F697 /* No_One_Left_A_LoanApp.swift */; };
 		7D77046F251F93000035F697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77046E251F93000035F697 /* ContentView.swift */; };
 		7D770471251F93030035F697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D770470251F93030035F697 /* Assets.xcassets */; };
@@ -20,9 +26,13 @@
 		7D770479251F93030035F697 /* No_One_Left_A_Loan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D770477251F93030035F697 /* No_One_Left_A_Loan.xcdatamodeld */; };
 		7D770484251F93040035F697 /* No_One_Left_A_LoanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D770483251F93040035F697 /* No_One_Left_A_LoanTests.swift */; };
 		7D77048F251F93040035F697 /* No_One_Left_A_LoanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77048E251F93040035F697 /* No_One_Left_A_LoanUITests.swift */; };
+<<<<<<< HEAD
 		7DC152C925204656003E6574 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC152C825204656003E6574 /* StudentModel.swift */; };
 		7DC152D12520601D003E6574 /* DonorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC152D02520601D003E6574 /* DonorModel.swift */; };
 		7DC152D6252066BC003E6574 /* NeutralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC152D5252066BC003E6574 /* NeutralView.swift */; };
+=======
+		E19429C1A4CB75410E9A8766 /* Pods_No_One_Left_A_LoanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87BB155F0DABA3BA51BFA9 /* Pods_No_One_Left_A_LoanTests.framework */; };
+>>>>>>> c9f72512361713df3f0b9733f640b3b8d7663703
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +53,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		7D1C4943251FFE8E00C57B84 /* SignUpChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpChoice.swift; sourceTree = "<group>"; };
 		7D1C4950252012E300C57B84 /* StudentRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRegistrationView.swift; sourceTree = "<group>"; };
 		7D1C49552520259300C57B84 /* AccountRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationView.swift; sourceTree = "<group>"; };
 		7D1C495E252036AC00C57B84 /* DonorRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorRegistrationView.swift; sourceTree = "<group>"; };
 		7D75CBA8251FE16600232204 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+=======
+		033FF6704A2483FCB40E7381 /* Pods-No One Left A-LoanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-No One Left A-LoanTests.debug.xcconfig"; path = "Target Support Files/Pods-No One Left A-LoanTests/Pods-No One Left A-LoanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E61C98463732481AA29C206 /* Pods-No One Left A-Loan-No One Left A-LoanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-No One Left A-Loan-No One Left A-LoanUITests.debug.xcconfig"; path = "Target Support Files/Pods-No One Left A-Loan-No One Left A-LoanUITests/Pods-No One Left A-Loan-No One Left A-LoanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F3B5C1CA90CDDEEB75091AC /* Pods-No One Left A-Loan-No One Left A-LoanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-No One Left A-Loan-No One Left A-LoanUITests.release.xcconfig"; path = "Target Support Files/Pods-No One Left A-Loan-No One Left A-LoanUITests/Pods-No One Left A-Loan-No One Left A-LoanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2E87BB155F0DABA3BA51BFA9 /* Pods_No_One_Left_A_LoanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_No_One_Left_A_LoanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ED81832251FE21400714E8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2ED8183A251FE6F300714E8B /* TwitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterView.swift; sourceTree = "<group>"; };
+		2ED81842251FE86500714E8B /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		2ED8184A251FE8E200714E8B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4E13673A8856FC60C1DA4606 /* Pods-No One Left A-LoanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-No One Left A-LoanTests.release.xcconfig"; path = "Target Support Files/Pods-No One Left A-LoanTests/Pods-No One Left A-LoanTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FBD82ACA1FE623F7556CB2A /* Pods-No One Left A-Loan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-No One Left A-Loan.release.xcconfig"; path = "Target Support Files/Pods-No One Left A-Loan/Pods-No One Left A-Loan.release.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> c9f72512361713df3f0b9733f640b3b8d7663703
 		7D770469251F93000035F697 /* No One Left A-Loan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No One Left A-Loan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D77046C251F93000035F697 /* No_One_Left_A_LoanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = No_One_Left_A_LoanApp.swift; sourceTree = "<group>"; };
 		7D77046E251F93000035F697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,9 +85,15 @@
 		7D77048A251F93040035F697 /* No One Left A-LoanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No One Left A-LoanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D77048E251F93040035F697 /* No_One_Left_A_LoanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = No_One_Left_A_LoanUITests.swift; sourceTree = "<group>"; };
 		7D770490251F93040035F697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		7DC152C825204656003E6574 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 		7DC152D02520601D003E6574 /* DonorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorModel.swift; sourceTree = "<group>"; };
 		7DC152D5252066BC003E6574 /* NeutralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralView.swift; sourceTree = "<group>"; };
+=======
+		83B8DC92C3EF2C137762C5EC /* Pods_No_One_Left_A_Loan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_No_One_Left_A_Loan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14D7712339C8FA4FCE939E0 /* Pods_No_One_Left_A_Loan_No_One_Left_A_LoanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_No_One_Left_A_Loan_No_One_Left_A_LoanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2BA74912D13F0D6A0E52D69 /* Pods-No One Left A-Loan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-No One Left A-Loan.debug.xcconfig"; path = "Target Support Files/Pods-No One Left A-Loan/Pods-No One Left A-Loan.debug.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> c9f72512361713df3f0b9733f640b3b8d7663703
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CC7F417DD18B91AAAF9CF9 /* Pods_No_One_Left_A_Loan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19429C1A4CB75410E9A8766 /* Pods_No_One_Left_A_LoanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +117,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118A493E130EE8C68BBEF4F4 /* Pods_No_One_Left_A_Loan_No_One_Left_A_LoanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		7D1C495A2520328F00C57B84 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +135,31 @@
 				7D1C495E252036AC00C57B84 /* DonorRegistrationView.swift */,
 			);
 			path = Registration;
+=======
+		2ED81831251FE11B00714E8B /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				2ED81842251FE86500714E8B /* NavView.swift */,
+				2ED81832251FE21400714E8B /* HomeView.swift */,
+				2ED8183A251FE6F300714E8B /* TwitterView.swift */,
+				2ED8184A251FE8E200714E8B /* ProfileView.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		706322996A349684BB56C266 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2BA74912D13F0D6A0E52D69 /* Pods-No One Left A-Loan.debug.xcconfig */,
+				6FBD82ACA1FE623F7556CB2A /* Pods-No One Left A-Loan.release.xcconfig */,
+				0E61C98463732481AA29C206 /* Pods-No One Left A-Loan-No One Left A-LoanUITests.debug.xcconfig */,
+				0F3B5C1CA90CDDEEB75091AC /* Pods-No One Left A-Loan-No One Left A-LoanUITests.release.xcconfig */,
+				033FF6704A2483FCB40E7381 /* Pods-No One Left A-LoanTests.debug.xcconfig */,
+				4E13673A8856FC60C1DA4606 /* Pods-No One Left A-LoanTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+>>>>>>> c9f72512361713df3f0b9733f640b3b8d7663703
 			sourceTree = "<group>";
 		};
 		7D770460251F92FF0035F697 = {
@@ -111,6 +169,8 @@
 				7D770482251F93040035F697 /* No One Left A-LoanTests */,
 				7D77048D251F93040035F697 /* No One Left A-LoanUITests */,
 				7D77046A251F93000035F697 /* Products */,
+				706322996A349684BB56C266 /* Pods */,
+				CA4266D8E7470016243490FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +195,7 @@
 				7D770475251F93030035F697 /* Persistence.swift */,
 				7D77047A251F93030035F697 /* Info.plist */,
 				7D770477251F93030035F697 /* No_One_Left_A_Loan.xcdatamodeld */,
+				2ED81831251FE11B00714E8B /* TabViews */,
 				7D770472251F93030035F697 /* Preview Content */,
 				7DC152D5252066BC003E6574 /* NeutralView.swift */,
 			);
@@ -167,6 +228,7 @@
 			path = "No One Left A-LoanUITests";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		7DC152C72520462E003E6574 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +236,16 @@
 				7DC152D02520601D003E6574 /* DonorModel.swift */,
 			);
 			path = Model;
+=======
+		CA4266D8E7470016243490FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83B8DC92C3EF2C137762C5EC /* Pods_No_One_Left_A_Loan.framework */,
+				A14D7712339C8FA4FCE939E0 /* Pods_No_One_Left_A_Loan_No_One_Left_A_LoanUITests.framework */,
+				2E87BB155F0DABA3BA51BFA9 /* Pods_No_One_Left_A_LoanTests.framework */,
+			);
+			name = Frameworks;
+>>>>>>> c9f72512361713df3f0b9733f640b3b8d7663703
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D770493251F93040035F697 /* Build configuration list for PBXNativeTarget "No One Left A-Loan" */;
 			buildPhases = (
+				D69503D13C14296189D1FFB2 /* [CP] Check Pods Manifest.lock */,
 				7D770465251F92FF0035F697 /* Sources */,
 				7D770466251F92FF0035F697 /* Frameworks */,
 				7D770467251F92FF0035F697 /* Resources */,
+				85C8F99E5F1CA340CDAF21D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D770496251F93040035F697 /* Build configuration list for PBXNativeTarget "No One Left A-LoanTests" */;
 			buildPhases = (
+				9323E217E638B643D8ECF70D /* [CP] Check Pods Manifest.lock */,
 				7D77047B251F93040035F697 /* Sources */,
 				7D77047C251F93040035F697 /* Frameworks */,
 				7D77047D251F93040035F697 /* Resources */,
@@ -218,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D770499251F93040035F697 /* Build configuration list for PBXNativeTarget "No One Left A-LoanUITests" */;
 			buildPhases = (
+				597D2CCF889C5AE15CBEDDC9 /* [CP] Check Pods Manifest.lock */,
 				7D770486251F93040035F697 /* Sources */,
 				7D770487251F93040035F697 /* Frameworks */,
 				7D770488251F93040035F697 /* Resources */,
+				A971799948CCA63C6E490E17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,13 +377,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		597D2CCF889C5AE15CBEDDC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-No One Left A-Loan-No One Left A-LoanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C8F99E5F1CA340CDAF21D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-No One Left A-Loan/Pods-No One Left A-Loan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-No One Left A-Loan/Pods-No One Left A-Loan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-No One Left A-Loan/Pods-No One Left A-Loan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9323E217E638B643D8ECF70D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-No One Left A-LoanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A971799948CCA63C6E490E17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-No One Left A-Loan-No One Left A-LoanUITests/Pods-No One Left A-Loan-No One Left A-LoanUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-No One Left A-Loan-No One Left A-LoanUITests/Pods-No One Left A-Loan-No One Left A-LoanUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-No One Left A-Loan-No One Left A-LoanUITests/Pods-No One Left A-Loan-No One Left A-LoanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D69503D13C14296189D1FFB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-No One Left A-Loan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7D770465251F92FF0035F697 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				7D1C495F252036AC00C57B84 /* DonorRegistrationView.swift in Sources */,
 				7DC152D12520601D003E6574 /* DonorModel.swift in Sources */,
+=======
+				2ED8184B251FE8E200714E8B /* ProfileView.swift in Sources */,
+>>>>>>> c9f72512361713df3f0b9733f640b3b8d7663703
 				7D770479251F93030035F697 /* No_One_Left_A_Loan.xcdatamodeld in Sources */,
 				7D770476251F93030035F697 /* Persistence.swift in Sources */,
 				7DC152C925204656003E6574 /* StudentModel.swift in Sources */,
@@ -315,8 +499,14 @@
 				7D1C49562520259300C57B84 /* AccountRegistrationView.swift in Sources */,
 				7D1C4951252012E300C57B84 /* StudentRegistrationView.swift in Sources */,
 				7D77046F251F93000035F697 /* ContentView.swift in Sources */,
+				2ED81833251FE21500714E8B /* HomeView.swift in Sources */,
+				2ED8183B251FE6F300714E8B /* TwitterView.swift in Sources */,
 				7D77046D251F93000035F697 /* No_One_Left_A_LoanApp.swift in Sources */,
+<<<<<<< HEAD
 				7D75CBA9251FE16600232204 /* LoginScreen.swift in Sources */,
+=======
+				2ED81843251FE86500714E8B /* NavView.swift in Sources */,
+>>>>>>> c9f72512361713df3f0b9733f640b3b8d7663703
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +660,7 @@
 		};
 		7D770494251F93040035F697 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2BA74912D13F0D6A0E52D69 /* Pods-No One Left A-Loan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +683,7 @@
 		};
 		7D770495251F93040035F697 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FBD82ACA1FE623F7556CB2A /* Pods-No One Left A-Loan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -514,6 +706,7 @@
 		};
 		7D770497251F93040035F697 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033FF6704A2483FCB40E7381 /* Pods-No One Left A-LoanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +729,7 @@
 		};
 		7D770498251F93040035F697 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E13673A8856FC60C1DA4606 /* Pods-No One Left A-LoanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +752,7 @@
 		};
 		7D77049A251F93040035F697 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E61C98463732481AA29C206 /* Pods-No One Left A-Loan-No One Left A-LoanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -578,6 +773,7 @@
 		};
 		7D77049B251F93040035F697 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F3B5C1CA90CDDEEB75091AC /* Pods-No One Left A-Loan-No One Left A-LoanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
