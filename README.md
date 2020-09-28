@@ -1,5 +1,7 @@
 # No One Left A-Loan!
 
+Click [here](https://www.youtube.com/watch?v=5O4sfVG6sK4) for a demo of our app!
+
 ## Inspiration
 As students afflicted by the Student Loan Debt Crisis ourselves, as well as unfulfilled supporters for crowdfunding websites such as GoFundMe and Kickstarter, we wanted to create a more a trustworthy platform to encourage donors to help out and promote #HealthyConversations revolving what could be considered a topic that's difficult to speak about.
 
