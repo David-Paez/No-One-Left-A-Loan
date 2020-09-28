@@ -13,7 +13,7 @@ struct No_One_Left_A_LoanApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(studentModel:StudentModel(), donorModel:DonorModel())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

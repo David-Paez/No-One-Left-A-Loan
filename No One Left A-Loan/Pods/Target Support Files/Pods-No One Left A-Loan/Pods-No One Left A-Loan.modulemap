@@ -1,0 +1,6 @@
+framework module Pods_No_One_Left_A_Loan {
+  umbrella header "Pods-No One Left A-Loan-umbrella.h"
+
+  export *
+  module * { export * }
+}

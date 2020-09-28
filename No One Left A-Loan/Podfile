@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'No One Left A-Loan' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for No One Left A-Loan
+  pod "Alamofire"
+  pod "SwiftyJSON"
+  pod "SDWebImageSwiftUI"
+
+  target 'No One Left A-LoanTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'No One Left A-LoanUITests' do
+    # Pods for testing
+  end
+
+end
