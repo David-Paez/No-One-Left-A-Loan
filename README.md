@@ -3,7 +3,7 @@
 Click [here](https://www.youtube.com/watch?v=5O4sfVG6sK4) for a demo of our app!
 
 ## Inspiration
-As students afflicted by the Student Loan Debt Crisis ourselves, as well as unfulfilled supporters for crowdfunding websites such as GoFundMe and Kickstarter, we wanted to create a more a trustworthy platform to encourage donors to help out and promote #HealthyConversations revolving what could be considered a topic that's difficult to speak about.
+As students afflicted by the Student Loan Debt Crisis ourselves, as well as unfulfilled supporters for crowdfunding websites such as GoFundMe and Kickstarter, we wanted to create a more trustworthy platform to encourage donors to help out and promote #HealthyConversations revolving what could be considered a topic that's difficult to speak about.
 
 ## What it does
 No One Left A-Loan is an iOS app that allows users to sign up as either students or donors. On the student side, it allows users to post a small description about themselves as well as the amount of loan debt they owe on a general feed so that donors may help them out through the simple click of a button. We decided to omit profile pictures on the home feed to avoid potential biases when it comes to funding students. In addition, it aims to promote #HealthyConversations revolving around difficult topics to speak about out of fear of public humiliation, such as debt.
